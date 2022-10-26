@@ -225,23 +225,23 @@ html {
   
   **********************************************************************/
   #head {
-    background: #afadad url(assets/images/refineria.jpg) top center;
+    background: #f4f4f4 url(assets/images/refineria.jpg) top center;
     background-size:cover;
-    color: #050505;
+    color: #7C7C7C;
     padding: 30px 0 35px 0;
   }
   #head img.img-circle {
     display: block;
-    width: 240px;
-    height: 240px;
+    width: 140px;
+    height: 140px;
     overflow: hidden;
     border: 9px solid rgba(0, 0, 0, 0.05);
     margin: 0 auto;
   }
   #head .title {
     font-family: Alice, Georgia, serif;
-    font-size: 80px;
-    font-size: 4.5rem;
+    font-size: 49px;
+    font-size: 3.0625rem;
   }
   #head .title a {
     text-decoration: none;
@@ -256,12 +256,12 @@ html {
     margin: 5px 0 0;
   }
   #head .tagline1 {
-    font-family: Impact, Hatenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: block;
     font-size: 20px;
    /*  font-size: 0.875rem; */
     line-height: 1.2em;
-    color: #fc0000;
+    color: #f78809;
     margin: 5px 0 0;
   }
   #head .tagline b {
@@ -805,5 +805,4 @@ html {
       max-width: 1080px;
     }
   }
-  
   
