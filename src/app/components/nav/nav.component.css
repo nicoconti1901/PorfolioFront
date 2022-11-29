@@ -1,8 +1,25 @@
 div{
-    background-color: rgb(192, 187, 187);
-}
-app-social{
-    float: right;
-    margin-top: 10px;
+    background-color: rgb(83, 83, 83);
     
 }
+.row{
+    width: 100%;
+}
+.logo{
+    width: 10%;
+    justify-content: left;
+    line-height: 20px;
+
+}
+a img{
+    
+    width: 50px;
+   
+}
+
+.redes {
+    text-align: right;
+    line-height: 50px;
+}
+
+

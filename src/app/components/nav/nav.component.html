@@ -1,38 +1,70 @@
-<div>
-<app-logo></app-logo>
-<app-social></app-social>
+<!--<header >
+<div class="row">
+    <div class="container">
+        <div class="logo">
+            <img src="../../../../assets/images/arg-programa.png"  id="logo">
+        </div>
+
+        
+
+        <div class="redes">
+            <a href="http://"><img src="../../../../assets/images/logo.inst.png" alt=""> </a>
+            <a href="http://"><img src="../../../../assets/images/logo.face.png" alt=""> </a>
+            <a href="http://"><img src="../../../../assets/images/logo.link.png" alt=""> </a>
+            <button type="button" class="btn btn-primary" (click)="login()">Ingreso</button>
+        </div> 
+    </div>
 </div>
+</header>-->
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container">
+      <!-- Navbar brand -->
+      
+        <img
+          src="../../../../assets/images/arg-programa.png"
+          height="40"
+          alt="MDB Logo"
+          loading="lazy"
+          style="margin-top: -1px;"
+        />
+      
+  
+      
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarButtonsExample">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="http://"><img src="../../../../assets/images/instagram1.png" alt=""> </a>
+            <a href="http://"><img src="../../../../assets/images/facebook1.png" alt=""> </a>
+            <a href="http://"><img src="../../../../assets/images/linkedin1.png" alt=""> </a>
+          </li>
+        </ul>
+        <!-- Left links -->
+  
+        <div class="d-flex align-items-center">
+          <button type="button" class="btn btn-primary me-3" (click)="login()" *ngIf="!isLogged">
+            Iniciar Sesion
+          </button>
+          <button type="button" class="btn btn-primary me-3" (click)="onLogOut()" *ngIf="isLogged">
+            Cerrar Sesion
+          </button>
+        </div>
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
 
 
 
-<!--<body class="home">
-    <header id="header">
-        <nav class="navbar navbar-default navbar-sticky">
-            <div class="container-fluid">
+
+
+
                 
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                </div>
                 
-                <div class="navbar-collapse collapse">
-                    
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Pagina Principal</a></li>
-                        <li><a href="about.html">Datos Personales</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Trayecto Profesional <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="educacion.html">Educacion</a></li>
-                                <li><a href="experiencia.profesional.html">Experiencia Profesional</a></li>
-                                <li><a href="habilidades.html">Habilidades</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="blog.html">Blog</a></li>
-                    </ul>
-                
-                </div>	
-            </div>	
-        </nav>
-    </header>
-</body>
--->
