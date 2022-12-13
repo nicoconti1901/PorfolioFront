@@ -1,0 +1,32 @@
+<div class="row section recentworks topspace">
+			
+    <h2 class="section-title"><span>Expericia Laboral</span></h2>
+    
+    <div class="d-grid gap-2 d-md-block" style="padding-left:20px">
+      <button type="button" class="btn btn-primary" routerLink="/nuevaexp" *ngIf="isLogged">
+        <i class="bi bi-plus-square"></i> Agregar Experiencia
+      </button>
+    </div>
+    <br>
+    <br>
+    
+    <div class="card" *ngFor="let Experiencia of expe">
+      <div class="card-header">
+        <strong>{{Experiencia.nombreE}}</strong>
+      </div>
+      
+      <div class="card-title">
+            <li><strong>Descripcion del puesto laboral:</strong>  {{Experiencia.descripcionE}}</li>
+            <br>
+            <li><strong>Tarea del puesto laboral:</strong>  {{Experiencia.tareaE}}</li>
+            <br>
+            <li><strong>Tiempo en el puesto laboral:</strong>  {{Experiencia.tiempoE}}</li>
+            <br>
+
+              <button type="button" style="margin: 10px" class="btn btn-dark" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged"><i class="bi bi-pencil"></i>Editar</button>
+              <button type="button" class="btn btn-danger"  (click)="borrar(Experiencia.id)"  *ngIf="isLogged"><i class="bi bi-x-octagon"></i>
+                Eliminar 
+              </button> 
+      </div> 
+    </div>
+</div>

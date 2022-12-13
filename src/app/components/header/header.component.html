@@ -1,18 +1,34 @@
 
 
-<header id="header">
+<header id="header" *ngIf = "pers">
 	
 	
 	<div id="head" class="parallax" parallax-speed="2">
-		<h1 id="logo" class="text-center">
+		<h1 id="logo" class="text-center" *ngFor="let Persona of pers">
 			<img class="img-circle" src="assets/images/Nico2.jpg" alt="">
-			<span class="title">{{persona.apellido}} {{persona.nombre}}</span>
+			<span class="title">{{Persona.apellido}} {{Persona.nombre}}</span>
 			<span class="tagline1">"No importa lo lento que vayas, siempre y cuando no te detengas"
                 <br>
                 
-				<a href="">{{persona.email}}</a></span>
+				<a href="">{{Persona.email}}</a></span>
+				<button type="button" style="margin: 10px" class="btn btn-dark" routerLink="/editperfil/{{Persona.id}}" *ngIf="isLogged"> <i class="bi bi-pencil"></i>Editar</button>
 		</h1>
 	</div>
 	<br>
 	<br>
 </header>
+<div class="container">
+    <div class="row topspace">
+        <div class="col-sm-8 col-sm-offset-2">
+                                                        
+            <article class="post">
+                <header class="entry-header">
+                    <h1 class="entry-title"><a href="single.html" rel="bookmark">Acerca de mi..</a></h1>
+                </header>
+                <div class="entry-content" *ngFor="let Persona of pers">
+                    <p>{{Persona.acercade}}</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>

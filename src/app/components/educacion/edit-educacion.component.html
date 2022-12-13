@@ -1,0 +1,37 @@
+<div class="container" *ngIf = "edu">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="tituloEdu">Nombre del Titulo</label>
+                    <input type="text" class="form-control" id="tituloEdu" name="tituloEdu" [(ngModel)]="edu.tituloEdu" required>
+                </div>
+                <div class="form-group">
+                    <label for="nivelEdu">Nivel Educativo</label>
+                    <input type="text" class="form-control" id="nivelEdu" name="nivelEdu" [(ngModel)]="edu.nivelEdu" required>
+                </div>
+                <div class="form-group">
+                    <label for="lugarEdu">Lugar de formacion</label>
+                    <input type="text" class="form-control" id="lugarEdu" name="lugarEdu" [(ngModel)]="edu.lugarEdu" required>
+                </div>
+                <div class="form-group">
+                    <label for="duracionEdu">Duracion de la formacion</label>
+                    <input type="text" class="form-control" id="duracion" name="duracionEdu" [(ngModel)]="edu.duracionEdu" required>
+                </div>
+                <div class="form-group">
+                    <label for="estadoEdu">Estado de formacion</label>
+                    <input type="text" class="form-control" id="estadoEdu" name="estadoEdu" [(ngModel)]="edu.estadoEdu" required>
+                </div>
+                <div class="form-group">
+                    <label for="fechafinEdu">Fecha de finalizacion</label>
+                    <input type="text" class="form-control" id="fechafinEdu" name="fechafinEdu" [(ngModel)]="edu.fechafinEdu" required>
+                </div>
+                <button class="btn btn-dark">
+                    Actualizar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+

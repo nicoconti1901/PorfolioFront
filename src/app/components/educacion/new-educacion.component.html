@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreateEdu()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="tituloEdu">Nombre del Titulo</label>
+                    <input type="text" class="form-control" id="tituloEdu" name="tituloEdu" [(ngModel)]="tituloEdu" required>
+                </div>
+                <div class="form-group">
+                    <label for="nivelEdu">Nivel Educativo</label>
+                    <input type="text" class="form-control" id="nivelEdu" name="nivelEdu" [(ngModel)]="nivelEdu" required>
+                </div>
+                <div class="form-group">
+                    <label for="duracionEdu">Duracion de la formacion</label>
+                    <input type="text" class="form-control" id="duracionEdu" name="duracionEdu" [(ngModel)]="duracionEdu" required>
+                </div>
+                <div class="form-group">
+                    <label for="lugarEdu">Lugar de formacion</label>
+                    <input type="text" class="form-control" id="lugarEdu" name="lugarEdu" [(ngModel)]="lugarEdu" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="estadoEdu">Estado de formacion</label>
+                    <input type="text" class="form-control" id="estadoEdu" name="estadoEdu" [(ngModel)]="estadoEdu" required>
+                </div>
+                <div class="form-group">
+                    <label for="fechaFinEdu">Fecha de finalizacion</label>
+                    <input type="text" class="form-control" id="fechafinEdu" name="fechafinEdu" [(ngModel)]="fechafinEdu" required>
+                </div>
+                <button class="btn btn-dark">
+                    Agregar Educacion
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+

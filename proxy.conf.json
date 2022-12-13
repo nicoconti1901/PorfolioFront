@@ -1,0 +1,21 @@
+{
+    "/explab/*":{
+        "target": "http://localhost:8080",
+        "secure": false,
+        "logLevel": "debug"
+    },
+
+    "/educacion/*":{
+        "target": "http://localhost:8080",
+        "secure": false,
+        "logLevel": "debug"
+    },
+    
+    "/persona/*":{
+        "target": "http://localhost:8080",
+        "secure": false,
+        "logLevel": "debug"   
+    }
+}
+
+    
