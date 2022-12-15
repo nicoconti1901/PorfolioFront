@@ -20,6 +20,10 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
 import { NewEducacionComponent } from './components/educacion/new-educacion.component';
 import { EditPersonaComponent } from './components/header/edit-persona.component';
+import { HysComponent } from './components/hys/hys.component';
+import { EditSkillComponent } from './components/hys/edit-skill.component';
+import { NewSkillComponent } from './components/hys/new-skill.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 
 
@@ -40,7 +44,10 @@ import { EditPersonaComponent } from './components/header/edit-persona.component
     EditExperienciaComponent,
     NewEducacionComponent,
     EditEducacionComponent,
-    EditPersonaComponent
+    EditPersonaComponent,
+    HysComponent,
+    EditSkillComponent,
+    NewSkillComponent
     
   ],
   imports: [
@@ -48,10 +55,8 @@ import { EditPersonaComponent } from './components/header/edit-persona.component
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule
-    
-    
-    
+    FormsModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [
     interceptorProvider

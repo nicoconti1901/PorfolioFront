@@ -1,0 +1,15 @@
+.row{
+    padding: 20px;
+}
+
+.btn.btn-primary{
+    background-color: rgba(77, 41, 41, 0.384);
+    border-color: rgb(0, 0, 0);
+    font-size:small;
+    align-content: center;
+    border-color: black;
+    color: rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    align-items: center;
+}
