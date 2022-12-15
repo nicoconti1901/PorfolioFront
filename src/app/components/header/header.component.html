@@ -5,13 +5,14 @@
 	
 	<div id="head" class="parallax" parallax-speed="2">
 		<h1 id="logo" class="text-center" *ngFor="let Persona of pers">
-			<img class="img-circle" src="assets/images/Nico2.jpg" alt="">
+			<img class="img-circle" src={{Persona.imagen}} alt="">
+
 			<span class="title">{{Persona.apellido}} {{Persona.nombre}}</span>
 			<span class="tagline1">"No importa lo lento que vayas, siempre y cuando no te detengas"
                 <br>
                 
 				<a href="">{{Persona.email}}</a></span>
-				<button type="button" style="margin: 10px" class="btn btn-dark" routerLink="/editperfil/{{Persona.id}}" *ngIf="isLogged"> <i class="bi bi-pencil"></i>Editar</button>
+				<button type="button" style="margin: 10px" class="btn btn-dark" routerLink="/editperfil/1" *ngIf="isLogged"> <i class="bi bi-pencil"></i>Editar</button>
 		</h1>
 	</div>
 	<br>

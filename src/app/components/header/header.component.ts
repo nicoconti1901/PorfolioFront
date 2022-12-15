@@ -10,7 +10,7 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class HeaderComponent implements OnInit {
 
-  pers: Persona[] = [];
+  pers: Persona[] = null;
 
   constructor(private personaService: PersonaService, private tokenService: TokenService) { }
 
