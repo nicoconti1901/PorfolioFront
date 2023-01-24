@@ -3,6 +3,18 @@ div{
     
     
 }
+
+#home{
+    color: black;
+    width: auto;
+    height: 40px;
+}
+em .bi .bi-house-door{
+    width: 60%;
+}
+p em{
+    width: 60%;
+}
 button{
     background-color: rgb(89, 80, 221);
     border-color: black;
@@ -16,9 +28,10 @@ button{
     line-height: 20px;
 
 }
-a img{
+img{
     
-    width: 50px;
+    width:auto;
+    height: 40px;
    
 }
 
@@ -34,6 +47,7 @@ nav{
     padding: 0px;
     margin-block:initial;
     width: 100%;
+    margin-top: 0px;
 }
 .navbar{
     width: 100%;
