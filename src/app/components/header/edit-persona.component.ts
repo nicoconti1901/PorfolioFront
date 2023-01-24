@@ -31,7 +31,7 @@ pers : Persona = null;
   }
   onUpdate():void{
     const id = this.activatedRouter.snapshot.params['id'];
-    this.pers.imagen = this.imageService.url
+    //this.pers.imagen = this.imageService.url
     this.personaService.update(id, this.pers).subscribe(
       data=> {
         this.router.navigate(['']);
@@ -42,9 +42,24 @@ pers : Persona = null;
     )
   }
 
-  uploadImage($event: any){
-    const id = this.activatedRouter.snapshot.params['id'];
-    const name = "perfil_" + id;
-    this.imageService.uploadImage($event, name);
+  // uploadImage($event: any){
+    //const id = this.activatedRouter.snapshot.params['id'];
+    //const name = "perfil_" + id;
+    //this.imageService.uploadImage($event, name);
+  //}
+
+  file(event:any) {
+   
+    let file = event.target.files[0];
+
+    console.log(event.target.files);
+
+    let reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => {
+      let x = reader.result;
+      this.pers.imagen = x;
+    
   }
+}
 }

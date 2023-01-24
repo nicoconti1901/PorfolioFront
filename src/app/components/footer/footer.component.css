@@ -1,0 +1,13 @@
+.row{
+    background: rgb(191, 202, 202);
+    
+}
+footer{
+    color:rgb(112, 111, 111);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 2px -2px 5px #999;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

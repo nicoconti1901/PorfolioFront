@@ -27,6 +27,11 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { FooterComponent } from './components/footer/footer.component';
+import { EditProyectoComponent } from './components/proyectos/edit-proyecto.component';
+import { NewProyectoComponent } from './components/proyectos/new-proyecto.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -50,13 +55,18 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     EditPersonaComponent,
     HysComponent,
     EditSkillComponent,
-    NewSkillComponent
+    NewSkillComponent,
+    FooterComponent,
+    EditProyectoComponent,
+    NewProyectoComponent
     
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MatCardModule,
+    MatSlideToggleModule,
     AppRoutingModule,
     FormsModule,
     NgCircleProgressModule.forRoot({}),

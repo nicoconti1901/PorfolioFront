@@ -6,17 +6,20 @@ import { getDownloadURL, list, ref, Storage, uploadBytes } from '@angular/fire/s
 })
 export class ImageService {
 url: string= "";
+
   constructor(private storage: Storage) { }
 
-  public uploadImage($event: any, name: string){
-    const file = $event.target.files[0]
-    const imagRef = ref(this.storage, 'imagen/' + name)
+  public uploadImage($event: any, name: string){  // esta funcion va s subir el archivo al firebase en la carpeta imagen con en name declarado en TS(perfil_ id)
+
+    const file = $event.target.files[0]  //carga de foto como evento
+    const imagRef = ref(this.storage, 'imagen/' + name)  // la imagen se carga en el storage en una constante imagRef
     uploadBytes(imagRef, file)
     .then(response => {this.getImages()})
     .catch(error => console.log(error))
   }
 
-  getImages(){
+  getImages(){ // funcion para traer la imagen desde el Storage
+    
     const imagesRef = ref(this.storage, 'imagen')
     list(imagesRef)
     .then(async response => {
@@ -25,6 +28,10 @@ url: string= "";
       }
     })
     .catch(error => console.log(error))
+  }
+
+  clearUrl(){
+    this.url ="";
   }
 
 }

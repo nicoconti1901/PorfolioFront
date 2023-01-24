@@ -2,9 +2,16 @@ ul{
     padding-top: 10px;
     padding-left: 20px;
 }
+.card{
+    border-color: black;
+}
 
 .col-xs-12 .col-sm-6 .col-md-4 .col-lg-4 {
     display: flex;
+}
+mat-card .example-card{
+    border-color: black;
+    border-width: 40px;
 }
 
 .card-header{
@@ -44,4 +51,36 @@ ul{
 .btn.btn-dark{
     font-size: small;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.row.section.recentworks.topspace{
+    background-color:  white;
+}
+
+.example-card {
+    max-width: 400px;
+    padding-left: 40px;
+    margin-left: 20px;
+    background-color: rgb(228, 145, 90);
+    color: black;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-color: black;
+    
+  }
+.mat-card-subtitle{
+    font-family: cursive;
+    
+}
+
+.mat-card-title i{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: normal;
+    display:block;
+    font-display:unset;
+}
+.mat-card-subtitle i{
+    color: black;
 }

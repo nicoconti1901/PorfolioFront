@@ -1,6 +1,11 @@
 div{
-    background-color: rgb(83, 83, 83);
+    background-color: rgb(143, 136, 136);
     
+    
+}
+button{
+    background-color: rgb(89, 80, 221);
+    border-color: black;
 }
 .row{
     width: 100%;
@@ -23,3 +28,17 @@ a img{
 }
 
 
+nav{
+    
+    padding-top: 0%;
+    padding: 0px;
+    margin-block:initial;
+    width: 100%;
+}
+.navbar{
+    width: 100%;
+}
+
+.container{
+    width:100%;
+}

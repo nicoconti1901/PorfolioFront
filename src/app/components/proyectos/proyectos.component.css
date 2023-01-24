@@ -1,0 +1,51 @@
+.title{
+font-size: medium;
+text-justify: auto;
+}
+
+.entry-content{
+    font-size: small;
+    text-align: center;
+}
+.post{
+    text-align: center;
+}
+
+.example-card {
+    max-width: 400px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    text-align: left;
+  }
+
+img {
+width: 300px;
+display: block;
+margin-left: 40px;
+justify-items: center;
+}
+.title.post{
+    text-align: center;
+}
+
+
+a{
+    padding: 20px;
+}
+.thumbnail{
+    background-color:rgb(226, 245, 248);
+    border-color: black;
+    
+    padding: 20px;
+}
+.thumbnails.recentworks.row{
+    padding: 40px;
+}
+
+div{
+    background-color: white;
+}
+
+.entry-content{
+    background-color:rgb(226, 245, 248);
+}

@@ -11,20 +11,21 @@
 			<span class="tagline1">"No importa lo lento que vayas, siempre y cuando no te detengas"
                 <br>
                 
-				<a href="">{{Persona.email}}</a></span>
+				<a id="mail" href="">{{Persona.email}} <i class="bi bi-envelope-at"></i></a></span>
 				<button type="button" style="margin: 10px" class="btn btn-dark" routerLink="/editperfil/1" *ngIf="isLogged"> <i class="bi bi-pencil"></i>Editar</button>
 		</h1>
 	</div>
 	<br>
 	<br>
 </header>
-<div class="container">
+<div id="acercade" class="parallax" parallax-speed="2">
+    <div class="container" >
     <div class="row topspace">
         <div class="col-sm-8 col-sm-offset-2">
                                                         
             <article class="post">
                 <header class="entry-header">
-                    <h1 class="entry-title"><a href="single.html" rel="bookmark">Acerca de mi..</a></h1>
+                    <h1 class="entry-title"><a rel="bookmark">Acerca de mi..</a> &nbsp; <i class="bi bi-file-earmark-person"></i></h1>
                 </header>
                 <div class="entry-content" *ngFor="let Persona of pers">
                     <p>{{Persona.acercade}}</p>
@@ -32,4 +33,5 @@
             </article>
         </div>
     </div>
+</div>
 </div>

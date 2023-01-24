@@ -228,12 +228,19 @@ html {
     background: #f4f4f4 url(assets/images/fondo-3.jpg) top center;
     background-size:cover;
     color: #7C7C7C;
-    padding: 50px 0 45px 0;
+    padding: 30px 0 30px 0;
   }
+  #acercade{
+    background: #f4f4f4 url(assets/images/fondo-7.jpg) top center;
+    background-size:cover;
+    color: #7C7C7C;
+    padding: 30px 0 30px 0;
+  }
+  
   #head img.img-circle {
     display: block;
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
     overflow: hidden;
     border: 9px solid rgba(0, 0, 0, 0.05);
     margin: 0 auto;
@@ -514,8 +521,8 @@ html {
     text-align: center;
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 36px;
-    font-size: 2.25rem;
+    font-size: 76px;
+    font-size: 4rem;
     letter-spacing: 1px;
   }
   .section-title a,
@@ -819,3 +826,5 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 @import "~mdb-angular-ui-kit/assets/scss/mdb.scss";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

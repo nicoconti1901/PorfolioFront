@@ -1,5 +1,6 @@
-<div class="row section recentworks topspace">
-    <h2 class="section-title"><span>Educacion</span></h2>
+<br>
+  <div class="row section recentworks topspace">
+    <h1 class="section-title"><span>Educacion &nbsp; <i class="bi bi-mortarboard"></i></span></h1>
     <div class="d-grid gap-2 d-md-block" style="padding-left:20px">
       <button type="button" class="btn btn-primary" routerLink="/nuevaedu" *ngIf="isLogged">
         <i class="bi bi-plus-square"></i> Agregar Educacion    
@@ -8,7 +9,30 @@
       <br>
       
     </div>
-    <div class="card" *ngFor="let Educacion of edu">
+    
+    <mat-card class="example-card" *ngFor="let Educacion of edu">
+      <mat-card-header>
+        <mat-card-title>{{Educacion.tituloEdu}}</mat-card-title>
+        <mat-card-subtitle>{{Educacion.nivelEdu}} &nbsp; <i class="bi bi-mortarboard-fill"></i></mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <li> <strong>Lugar:</strong>  {{Educacion.lugarEdu}}</li>
+        <br>
+        <li> <strong>Duracion: </strong> {{Educacion.duracionEdu}}</li>
+        <br>
+        <li> <strong>Estado:</strong>  {{Educacion.estadoEdu}}</li>
+        <br>
+        <li> <strong>Fecha de finalizacion:</strong>  {{Educacion.fechafinEdu}}</li>
+        <br>
+        <button type="button" style="margin: 10px" class="btn btn-dark" routerLink="/editedu/{{Educacion.id}}" *ngIf="isLogged"> <i class="bi bi-pencil"></i>Editar</button>
+        <button type="button" class="btn btn-danger"  (click)="borrar(Educacion.id)"  *ngIf="isLogged"><i class="bi bi-x-octagon"></i>
+          Eliminar    
+        </button>
+      </mat-card-content>
+      
+    </mat-card>
+  
+    <!-- <div class="card" *ngFor="let Educacion of edu">
       <div class="card-header">
         <strong>{{Educacion.tituloEdu}}</strong>
       </div>
@@ -27,6 +51,8 @@
         </button>
       </div>
     </div>
+  </div> -->
+
   <!--<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" display="flex">
     <ul class="list-group" *ngFor="let Educacion of edu">
       <li class="list-group-item active" aria-current="true">An active item</li>
