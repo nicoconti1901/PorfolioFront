@@ -1,29 +1,29 @@
 {
     "/explab/*":{
-        "target": "http://localhost:8080",
+        "target": "https://nicocontibackend.onrender.com",
         "secure": false,
         "logLevel": "debug"
     },
 
     "/educacion/*":{
-        "target": "http://localhost:8080",
+        "target": "https://nicocontibackend.onrender.com",
         "secure": false,
         "logLevel": "debug"
     },
     
     "/persona/*":{
-        "target": "http://localhost:8080",
+        "target": "https://nicocontibackend.onrender.com",
         "secure": false,
         "logLevel": "debug"   
     },
 
     "/skill/*":{
-        "target": "http://localhost:8080",
+        "target": "https://nicocontibackend.onrender.com",
         "secure": false,
         "logLevel": "debug"   
     },
     "/proyecto/*":{
-        "target": "http://localhost:8080",
+        "target": "https://nicocontibackend.onrender.com",
         "secure": false,
         "logLevel": "debug"   
     }
