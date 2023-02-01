@@ -1,1 +1,16 @@
-{}
+{
+  "hosting": {
+    "public": "dist/porfolio-nico-conti",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

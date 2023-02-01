@@ -8,7 +8,7 @@ import { Persona } from '../model/persona.model';
 })
 export class PersonaService {
 
-  URL = '/persona/'
+  URL = 'https://nicocontibackend.onrender.com/persona/';
 
   constructor(private httpClient: HttpClient) { }
 

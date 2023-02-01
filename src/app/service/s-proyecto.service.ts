@@ -7,7 +7,7 @@ import { Proyecto } from '../model/proyecto';
   providedIn: 'root'
 })
 export class SProyectoService {
-  proyect = '/proyecto/'
+  proyect = 'https://nicocontibackend.onrender.com/proyecto/';
 
   constructor(private httpClient: HttpClient) { }
 

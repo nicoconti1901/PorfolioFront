@@ -1,3 +1,18 @@
+/* @import "~mdb-angular-ui-kit/assets/scss/mdb.scss"; */
+
+/*@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss"; */
+/*@import "~@fortawesome/fontawesome-free/scss/solid.scss";*/
+/*@import "~@fortawesome/fontawesome-free/scss/regular.scss";*/
+/*@import "~@fortawesome/fontawesome-free/scss/brands.scss"; */
+
+/*
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "~mdb-angular-ui-kit/assets/scss/mdb.scss";
+
+*/
+
+/*
+
 html {
     font-size: 100%;
   }
@@ -11,6 +26,8 @@ html {
   .topspace {
     margin-top: 40px;
   }
+/*
+
   /*********************************************************************
   
   
@@ -18,6 +35,9 @@ html {
   
   
   **********************************************************************/
+ 
+  /*
+
   .navbar {
     border-width: 1px 0;
     -webkit-border-radius: 0;
@@ -109,6 +129,9 @@ html {
     background-color: #ffffff;
     color: #000000;
   }
+
+  */
+
   /****************************************************************************************
   
   
@@ -116,6 +139,9 @@ html {
   
   
   *****************************************************************************************/
+  
+  /*
+
   .nav-side {
     font-size: 24px;
     font-size: 1.5rem;
@@ -134,6 +160,9 @@ html {
   .nav-side > li.active > a {
     color: #bd1550;
   }
+
+  */
+
   /*********************************************************************
   
   
@@ -141,6 +170,9 @@ html {
   
   
   **********************************************************************/
+  
+  /*
+
   p {
     line-height: 2.5em;
     margin: 0 0 30px 0;
@@ -217,6 +249,9 @@ html {
     max-width: 100%;
     height: auto;
   }
+
+  */
+
   /*********************************************************************
   
   
@@ -224,6 +259,7 @@ html {
   
   
   **********************************************************************/
+
   #head {
     background: #f4f4f4 url(assets/images/fondo-3.jpg) top center;
     background-size:cover;
@@ -296,6 +332,9 @@ html {
   
   
   **********************************************************************/
+  
+  /*
+
   img {
     max-width: 100%;
   }
@@ -355,6 +394,7 @@ html {
     line-height: 1.33;
     font-weight: bold;
   }
+  
   .panel-cta {
     box-shadow: 0 0 0 1px #e1e1e1, 0 0 0 3px #fff, 0 0 0 4px #e1e1e1;
     background: #f3f3f3;
@@ -375,7 +415,13 @@ html {
   .panel-cta .panel-body {
     padding: 35px;
   }
+
+  */
+
   /* Section - Featured */
+  
+  /*
+
   .featured {
     font-size: 13px;
     font-size: 0.8125rem;
@@ -390,7 +436,12 @@ html {
     vertical-align: middle;
     margin: 0 0 25px 0;
   }
+
+  */
+
   /* Section - Recent works */
+  
+  
   .thumbnails {
     padding: 0;
   }
@@ -432,6 +483,7 @@ html {
     display: block;
     text-indent: 0;
   }
+  
   .thumbnail .cover {
     position: absolute;
     display: block;
@@ -449,6 +501,8 @@ html {
     -o-transition-duration: 550ms;
     transition-duration: 550ms;
   }
+  
+  
   .thumbnail .cover .more {
     position: absolute;
     bottom: 15px;
@@ -469,6 +523,7 @@ html {
     background: #bd1550;
     color: white;
   }
+  
   .thumbnail img {
     width: 100%;
     position: absolute;
@@ -479,13 +534,19 @@ html {
     color: #333;
     text-decoration: none;
   }
-  .thumbnail:hover img {
-    -webkit-filter: saturate(0%);
-  }
+  
   .thumbnail:hover .cover {
     opacity: 1;
   }
+
+  
+
+
   /* pagination */
+  
+  
+  /*
+
   .pagination > li > a {
     color: #808080;
     border: 0 none;
@@ -505,6 +566,9 @@ html {
     color: #000000;
     background: none;
   }
+
+  */
+
   /*********************************************************************
   
   
@@ -512,6 +576,9 @@ html {
   
   
   **********************************************************************/
+  
+  
+
   .section-title,
   .entry-title {
     display: block;
@@ -597,7 +664,13 @@ html {
     width: 100%;
     text-align: right;
   }
+
+  
+
   /* Posts navigation */
+  
+  /*
+
   #nav-below {
     position: fixed;
     top: 48%;
@@ -661,6 +734,9 @@ html {
     margin-top: 0;
     margin-bottom: 30px;
   }
+
+  */
+
   /*********************************************************************
   
   
@@ -668,6 +744,9 @@ html {
   
   
   **********************************************************************/
+  
+  /*
+
   #comments {
     font-size: 13px;
     font-size: 0.8125rem;
@@ -757,6 +836,9 @@ html {
   #respond {
     margin: 55px 0 0 0;
   }
+
+  */
+
   /*********************************************************************
   
   
@@ -764,6 +846,9 @@ html {
   
   
   **********************************************************************/
+  
+  /*
+
   #footer {
     background: #232323;
     padding: 30px 0 0 0;
@@ -805,8 +890,14 @@ html {
     float: left;
     margin: 0 10px 0 0;
   }
+
+  */
+
   /* Max page width
   /////////////////////////////////////////////////////////////////////*/
+  
+  /*
+
   @media (min-width: 1200px) {
     .container {
       max-width: 1080px;
@@ -817,14 +908,7 @@ html {
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-@import "~mdb-angular-ui-kit/assets/scss/mdb.scss";
 
-@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "~@fortawesome/fontawesome-free/scss/solid.scss";
-@import "~@fortawesome/fontawesome-free/scss/regular.scss";
-@import "~@fortawesome/fontawesome-free/scss/brands.scss";
-
-
-@import "~mdb-angular-ui-kit/assets/scss/mdb.scss";
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+*/

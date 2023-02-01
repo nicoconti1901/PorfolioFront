@@ -7,7 +7,7 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillService {
-URL = '/skill/'
+URL = 'https://nicocontibackend.onrender.com/skill/';
 
   constructor(private httpClient: HttpClient) { }
 
