@@ -58,8 +58,14 @@ pers : Persona = null;
     reader.readAsDataURL(file);
     reader.onload = () => {
       let x = reader.result;
+      if(file.size>500000){
+        const tamanioEnMb = 500000/1000;
+        alert(`El tamaño maximo es ${tamanioEnMb} KB`);
+        this.pers.imagen = "";
+      }
+      else{
       this.pers.imagen = x;
-    
+      }
   }
 }
 }

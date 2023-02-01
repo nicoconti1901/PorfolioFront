@@ -49,7 +49,15 @@ proyecto: Proyecto = null;
     reader.readAsDataURL(file);
     reader.onload = () => {
       let x = reader.result;
-      this.proyecto.imagen = x;
+      if(file.size>500000){
+        const tamanioEnMb = 500000/1000;
+        alert(`El tamaño maximo es ${tamanioEnMb} KB`);
+        this.proyecto.imagen = "";
+      }
+      else{
+        this.proyecto.imagen = x;
+      }
+      
     
   }
 }

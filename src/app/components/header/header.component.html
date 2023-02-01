@@ -7,11 +7,12 @@
 		<h1 id="logo" class="text-center" *ngFor="let Persona of pers">
 			<img class="img-circle" src={{Persona.imagen}} alt="">
 
-			<span class="title">{{Persona.apellido}} {{Persona.nombre}}</span>
-			<span class="tagline1">"No importa lo lento que vayas, siempre y cuando no te detengas"
-                <br>
+			<span class="title"> <strong>{{Persona.apellido}} {{Persona.nombre}}</strong> </span>
+			<span class="tagline1">"No importa lo lento que vayas, siempre y cuando no te detengas"</span>
                 
-				<a id="mail" href="">{{Persona.email}} <i class="bi bi-envelope-at"></i></a></span>
+                
+				<span id="mail"> <strong>{{Persona.email}}</strong>  <i class="bi bi-envelope-at"></i></span>
+                <br>
 				<button type="button" style="margin: 10px" class="btn btn-dark" routerLink="/editperfil/1" *ngIf="isLogged"> <i class="bi bi-pencil"></i>Editar</button>
 		</h1>
 	</div>

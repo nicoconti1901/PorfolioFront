@@ -46,7 +46,14 @@ file(event:any) {
   reader.readAsDataURL(file);
   reader.onload = () => {
     let x = reader.result;
-    this.imagen= x;
+    if(file.size>500000){
+      const tamanioEnMb = 500000/1000;
+      alert(`El tamaño maximo es ${tamanioEnMb} KB`);
+      this.imagen = "";
+    }
+    else{
+      this.imagen = x;
+    }
   
 }
 }
