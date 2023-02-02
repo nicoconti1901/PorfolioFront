@@ -1,37 +1,11 @@
-<!--<header >
-<div class="row">
-    <div class="container">
-        <div class="logo">
-            <img src="../../../../assets/images/arg-programa.png"  id="logo">
-        </div>
-
-        
-
-        <div class="redes">
-            <a href="http://"><img src="../../../../assets/images/logo.inst.png" alt=""> </a>
-            <a href="http://"><img src="../../../../assets/images/logo.face.png" alt=""> </a>
-            <a href="http://"><img src="../../../../assets/images/logo.link.png" alt=""> </a>
-            <button type="button" class="btn btn-primary" (click)="login()">Ingreso</button>
-        </div> 
-    </div>
-</div>
-</header>-->
-<!-- Navbar -->
-
-<nav class="navbar navbar-expand-xl navbar-light bg-light">
-    <!-- Container wrapper -->
-    <div class="container">
-      <!-- Navbar brand -->
+<!--
+  <nav>
       
-        <a href="">
+        <a href="" >
           <img
-          src="../../../../assets/images/arg-programa.png"
+          src="../../../../assets/images/logo-arg-prog-.png"
           height="40"
-          alt="MDB Logo"
-          loading="lazy"
-          style="margin-top: -1px;"
-    
-      
+          class="logo"
         />
         </a>
         
@@ -39,19 +13,17 @@
    
       
   
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarButtonsExample">
-        <!-- Left links -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a href="https://www.instagram.com/nicocontirp/" target="_blank"><img src="../../../../assets/images/instagram1.png" alt="" style="text-align: center;"> </a>
-            <a href="https://www.facebook.com/nico.conti.rp.10" target="_blank"><img src="../../../../assets/images/facebook1.png" alt="" style="text-align: center;"> </a>
-            <a href="https://www.linkedin.com/in/nicolas-conti-a4283242/" target="_blank"><img src="../../../../assets/images/linkedin1.png" alt="" style="text-align: center;"> </a>
+      
+        <section class="sociales">
+          <li>
+            <a href="https://www.instagram.com/nicocontirp/" target="_blank"><img src="../../../../assets/images/instagram1.png" alt="" style="text-align: center;" class="red"> </a>
+            <a href="https://www.facebook.com/nico.conti.rp.10" target="_blank"><img src="../../../../assets/images/facebook1.png" alt="" style="text-align: center;" class="red"> </a>
+            <a href="https://www.linkedin.com/in/nicolas-conti-a4283242/" target="_blank"><img src="../../../../assets/images/linkedin1.png" alt="" style="text-align: center;" class="red"> </a>
           </li>
-        </ul>
-        <!-- Left links -->
+        </section>
+      
   
-        <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center align-content-right">
           <button type="button" class="btn btn-primary me-3" (click)="login()" *ngIf="!isLogged">
             Iniciar Sesion
           </button>
@@ -59,17 +31,24 @@
             Cerrar Sesion
           </button>
         </div>
-      </div>
-      <!-- Collapsible wrapper -->
-    </div>
-    <!-- Container wrapper -->
-  </nav>
-  <!-- Navbar -->
+</nav>
+-->
 
+ <nav class="navbar navbar-expand-lg bg-light fixed-top  margin-bottom=30px">
+  <div class="container-fluid">
+    <img src="../../../../assets/images/logarg1.jpg" class="img-fluid" width="90px">
+    
+      <form  role="login">
+        <a href="https://www.instagram.com/nicocontirp/" target="_blank"><img src="../../../../assets/images/instagram1.png" width="40px"></a> 
+        <a href="https://www.facebook.com/nico.conti.rp.10" target="_blank"><img src="../../../../assets/images/facebook1.png" width="40px" ></a>
+        <a href="https://www.linkedin.com/in/nicolas-conti-a4283242/" target="_blank"><img src="../../../../assets/images/linkedin1.png" width="40px" ></a> 
+      </form>
 
-
-
-
-
-                
+    
+         
+      <button type="button" class="btn btn-primary me-3" (click)="login()" *ngIf="!isLogged">LogIn</button>
+      <button type="button" class="btn btn-primary me-3" (click)="onLogOut()" *ngIf="isLogged">LogOut</button>
+   
+  </div>
+ </nav>               
                 

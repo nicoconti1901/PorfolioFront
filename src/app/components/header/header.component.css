@@ -6,10 +6,17 @@
 }
 
 header{
-    margin-top: auto;
+    margin-top: 0px;
+    top:0px;
+    padding-top: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
 #mail{
     color: brown;
     font-size: small;
+}
+#header{
+    top: 0px;
 }
